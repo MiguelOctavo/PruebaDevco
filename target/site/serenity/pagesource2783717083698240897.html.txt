@@ -1,0 +1,965 @@
+<html lang="es"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="4CKl2BdaJOrlqMxv0Xfdwh1Zd7sPggyFP9xRAhND">
+    <title>Bloc de notas online | Escribir notas online</title>
+            <meta name="description" content="Online-notepad.net es un bloc de notas línea para escribir notas online gratis, guardar, descargar y compartir sus notas en línea.">
+  <!-- Twitter Tages -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Online Notepad">
+  <meta name="twitter:creator" content="@Online Notepad">
+  <meta name="twitter:title" content="Bloc de notas online | Escribir notas online">
+  <meta name="twitter:description" content="Online-notepad.net es un bloc de notas línea para escribir notas online gratis, guardar, descargar y compartir sus notas en línea.">
+  <!-- Facebook Tages -->
+  <meta property="og:url" content="https://www.online-notepad.net/es/bloc-de-notas-online">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bloc de notas online | Escribir notas online">
+  <meta property="og:description" content="Online-notepad.net es un bloc de notas línea para escribir notas online gratis, guardar, descargar y compartir sus notas en línea.">
+  <!-- Meta Tags -->
+      <meta name="robots" content="INDEX,FOLLOW">
+  
+  <link rel="canonical" href="https://www.online-notepad.net/es/bloc-de-notas-online">
+      <link rel="alternate" hreflang="x-default" href="https://www.online-notepad.net/">
+                            <link rel="alternate" hreflang="en" href="https://www.online-notepad.net">
+                                  <link rel="alternate" hreflang="fr" href="https://www.online-notepad.net/fr/bloc-note-en-ligne">
+                                          <link rel="alternate" hreflang="ru" href="https://www.online-notepad.net/ru/bloknot-onlayn">
+                                  <link rel="alternate" hreflang="tr" href="https://www.online-notepad.net/tr/online-not-defteri">
+                                  <link rel="alternate" hreflang="it" href="https://www.online-notepad.net/it/blocco-note-online">
+                                  <link rel="alternate" hreflang="pl" href="https://www.online-notepad.net/pl/notatnik-online">
+                <link rel="icon" type="image/png" sizes="16x16" href="https://www.online-notepad.net/assets/imgs/Favicon.png">
+    <meta property="og:image" content="https://www.online-notepad.net/assets/imgs/Social_Banner.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <link rel="stylesheet" href="https://www.online-notepad.net/assets/bootstrap-5.0.2-dist/css/bootstrap.min.css?v=1.0.0">
+    <link type="text/css" href="https://www.online-notepad.net/assets/ck-edit/sample/css/sample.css?v=1.0.0" rel="stylesheet" media="screen">
+    <style>
+        .date{
+            height: 30px;
+        }
+        .noteNameBox {
+            height: 30px;
+        }
+        #noteName{
+            font-size: 20px !important;
+        }
+        .WS_ad_l,
+        .WS_ad_r{
+            max-width: 120px;
+            width: 120px;
+            max-height: 600px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            border:none;
+        }
+        .WS_ad_l{
+            left: 0;
+        }
+        .WS_ad_r{
+            right:0;
+        }
+
+        .reponsiveAds { width: 320px; height: 100px; }
+        @media(min-width: 500px) { .reponsiveAds { width: 468px; height: 60px; } }
+        @media(min-width: 800px) { .reponsiveAds { width: 728px; height: 90px; } }
+    </style>
+<link rel="stylesheet" href="https://www.online-notepad.net/assets/css/notepadstyle.css?v=1.1.0">
+    
+    <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202306280101/show_ads_impl_fy2021.js" id="google_shimpl"></script><script type="text/javascript">
+        var base_url = "https://www.online-notepad.net";
+        var site_url = "https://www.online-notepad.net";
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EBPVSE332N"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EBPVSE332N');
+    </script>
+
+    <style>
+        .reponsiveAds { width: 320px; height: 100px; }
+        @media(min-width: 500px) { .reponsiveAds { width: 468px; height: 60px; } }
+        @media(min-width: 800px) { .reponsiveAds { width: 728px; height: 90px; } }
+
+        .example_responsive_1 {
+            width: 320px;
+            height: 100px;
+        }
+
+        @media(min-width: 500px) {
+            .example_responsive_1 {
+                width: 468px;
+                height: 60px;
+            }
+        }
+
+        @media(min-width: 800px) {
+            .example_responsive_1 {
+                width: 728px;
+                height: 90px;
+            }
+        }
+
+        .my-sticky-div {
+            position: fixed;
+            bottom: 0;
+            z-index: 9999999;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .toggleButton {
+            position: absolute;
+            top: 0;
+            height: 40px;
+            border-radius: 50%;
+            right: 0;
+            width: 40px;
+            z-index: 99999;
+            display: flex;
+            align-items: self-end;
+            justify-content: center;
+        }
+
+        .toggleButton img {
+            width: 20px;
+        }
+
+        .rotate {
+            transform: rotate(178deg);
+        }
+
+        .bottom {
+            bottom: -110px;
+        }
+
+        .toggleButton {
+            background-color: #fff;
+        }
+        .ad-zone{
+            height: auto;
+        }
+    </style>
+<meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="></head>
+
+<body>
+    
+    <div class="position-fixed bottom-0 start-0 p-2" style="z-index: 9999">
+        <div id="msgToast" class="toast fade hide bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
+            <div class="toast-body text-center"></div>
+        </div>
+    </div>
+
+    <header id="notepad-nav">
+    <nav id="navbar " class="navbar sticky-top navbar-expand-lg navbar-light text-light">
+        <div class="container">
+                            <span style="line-height: 0">
+                    <a class="navbar-brand" id="logoURL" href="https://www.online-notepad.net/es/bloc-de-notas-online">
+                        <img class="logo d-inline" style="vertical-align: sub" src="https://www.online-notepad.net/assets/imgs/Icons/list1.svg" alt="Online Notepad" width="36px" height="38px"> <h1 class="d-inline">bloc de notas online</h1>
+                    </a>
+                </span>
+                        <button class="navbar-toggler" onclick="openMenu()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fixednavonmobile" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  " aria-current="page" href="https://www.online-notepad.net">Hogar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-nav-link" aria-current="page" href="https://www.online-notepad.net/how-it-works">¿Cómo funciona?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-nav-link" aria-current="page" href="https://www.online-notepad.net/blog">Blog</a>
+                    </li>
+                    <li class="nav-item mb-lg-0 mb-2">
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.online-notepad.net/contact-us" class="btn notepad-btn px-4">
+                            Contacta con nosotras
+                        </a>
+                    </li>
+                    
+                                            <li class="nav-item dropdown">
+                            <a class="dropdown-toggle ms-0 ms-md-3 mt-3 mt-md-0 me-0 btn btn-outline-light text-dark border-dark" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="rounded-circle me-2" width="22px" src="https://www.online-notepad.net/assets/imgs/flags/es.svg" alt="es">
+                                Española
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: fit-content">
+                                                                    
+                                    <li class="drophover flag dropdown-item w-auto p-0 pe-3"><a href="https://www.online-notepad.net" data-href="https://www.online-notepad.net" class="drophover dropdown-item text-capitalize choosedLang"><div class="d-flex w-auto align-items-center"><img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/us.svg" alt="en">English</div> </a></li>
+                                                                    
+                                    <li class="drophover flag dropdown-item w-auto p-0 pe-3"><a href="https://www.online-notepad.net/fr/bloc-note-en-ligne" data-href="https://www.online-notepad.net/fr/bloc-note-en-ligne" class="drophover dropdown-item text-capitalize choosedLang"><div class="d-flex w-auto align-items-center"><img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/fr.svg" alt="fr">Française</div> </a></li>
+                                                                    
+                                    <li class="drophover flag dropdown-item w-auto p-0 pe-3"><a href="https://www.online-notepad.net/es/bloc-de-notas-online" data-href="https://www.online-notepad.net/es/bloc-de-notas-online" class="drophover dropdown-item text-capitalize choosedLang"><div class="d-flex w-auto align-items-center"><img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/es.svg" alt="es">Española</div> </a></li>
+                                                                    
+                                    <li class="drophover flag dropdown-item w-auto p-0 pe-3"><a href="https://www.online-notepad.net/ru/bloknot-onlayn" data-href="https://www.online-notepad.net/ru/bloknot-onlayn" class="drophover dropdown-item text-capitalize choosedLang"><div class="d-flex w-auto align-items-center"><img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/ru.svg" alt="ru">Русский</div> </a></li>
+                                                                    
+                                    <li class="drophover flag dropdown-item w-auto p-0 pe-3"><a href="https://www.online-notepad.net/tr/online-not-defteri" data-href="https://www.online-notepad.net/tr/online-not-defteri" class="drophover dropdown-item text-capitalize choosedLang"><div class="d-flex w-auto align-items-center"><img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/tr.svg" alt="tr">Türk</div> </a></li>
+                                                                    
+                                    <li class="drophover flag dropdown-item w-auto p-0 pe-3"><a href="https://www.online-notepad.net/it/blocco-note-online" data-href="https://www.online-notepad.net/it/blocco-note-online" class="drophover dropdown-item text-capitalize choosedLang"><div class="d-flex w-auto align-items-center"><img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/it.svg" alt="it">Italianao</div> </a></li>
+                                                                    
+                                    <li class="drophover flag dropdown-item w-auto p-0 pe-3"><a href="https://www.online-notepad.net/pl/notatnik-online" data-href="https://www.online-notepad.net/pl/notatnik-online" class="drophover dropdown-item text-capitalize choosedLang"><div class="d-flex w-auto align-items-center"><img style="width: 25px" class="rounded-circle me-2 img-fluid" src="https://www.online-notepad.net/assets/imgs/flags/pl.svg" alt="pl">Polish</div> </a></li>
+                                                            </ul>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+
+    </nav>
+</header>
+    <div class="content">
+            <section id="notepad-section" class="position-relative">
+        
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="border-0 text-center w-100">
+                    <ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-6081967606533178" data-ad-slot="4195002517" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><div id="aswift_1_host" style="border: none; height: 280px; width: 1200px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                                    <div class="col-lg-3 d-none d-md-block d-lg-block gx-0 mt-3" style="margin-top: 6.7%;">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link vNav" id="plaintextnote-tab" data-bs-toggle="pill" data-bs-target="#plaintextnote" type="button" role="tab" aria-controls="plaintextnote" aria-selected="false">Nota de texto sin formato</button>
+                            <button class="nav-link vNav active" id="richtextnote-tab" data-bs-toggle="pill" data-bs-target="#richtextnote" type="button" role="tab" aria-controls="richtextnote" aria-selected="true">Nota de texto enriquecido</button>
+                            <button class="nav-link vNav" id="tasklist-tab" data-bs-toggle="pill" data-bs-target="#tasklist" type="button" role="tab" aria-controls="tasklist" aria-selected="false">Lista de tareas</button>
+                        </div>
+                        <div class="border-0 text-center w-100">
+                            <ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-6081967606533178" data-ad-slot="4195002517" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><div id="aswift_2_host" style="border: none; height: 250px; width: 330px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    </div>
+                                <div class="col-lg-6 mt-3">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="noteNameBox ">
+                            <input class="fs-24 date d-inline-block" id="noteName" value="Note_1, 06-Jul-2023">
+                            <img loading="lazy" src="https://www.online-notepad.net/assets/imgs/writing.svg" width="20px" height="23px" id="editNoteName" alt="write-name">
+                        </div>
+                        <div class="navbar pt-0 pb-0 navbar-expand">
+                            <div class="navbar-nav d-block d-md-none d-lg-none my-2 my-md-0 my-lg-0">
+                                <li class="dropdown">
+                                    <a class="nav-link dropdown-toggle selecttabs" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Plain Text Note </a>
+                                    <ul class="dropdown-menu my-dropdown nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                            <li class="nav-item drop-tab" role="presentation">
+                                                <button class="nav-link select-drop-items" id="plaintextnote-tab" data-bs-toggle="tab" data-bs-target="#plaintextnote" type="button" role="tab" aria-controls="plaintextnote" aria-selected="true">Plain Text Note
+                                                </button>
+                                            </li>
+                                            <li class="nav-item drop-tab" role="presentation">
+                                                <button class="nav-link select-drop-items" id="richtextnote-tab" data-bs-toggle="pill" data-bs-target="#richtextnote" type="button" role="tab" aria-controls="richtextnote" aria-selected="false">Rich Text Note
+                                                </button>
+                                            </li>
+                                            <li class="nav-item drop-tab" role="presentation">
+                                                <button class="nav-link select-drop-items" id="tasklist-tab" data-bs-toggle="pill" data-bs-target="#tasklist" type="button" role="tab" aria-controls="tasklist" aria-selected="false">Task List
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="nav-item note-pad-opt mx-3 mx-md-0 mx-lg-0">
+                                <form action="" id="importFileForm">
+                                    <input type="hidden" name="_token" value="4CKl2BdaJOrlqMxv0Xfdwh1Zd7sPggyFP9xRAhND">                                    <div class="upload-btn-wrapper">
+                                        <button class="btn import" id="fileImportBtn"> <span>
+                                                <img src="https://www.online-notepad.net/assets/imgs/Icons/Import icon.svg" alt="icon" width="18px" height="18px"></span>
+                                                Importar Word/Pdf/.Txt
+                                                <span span="" class="spinner-border spinner text-dark" role="status">
+                                                    <span class="sr-only visually-hidden">Loading...</span>
+                                                </span>
+                                        </button>
+                                        <input type="file" name="myfile" id="importedFile" accept=".pdf,.doc,.docx,.txt">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area-nav">
+                        <nav class="navbar navbar-expand navbar-light bg-white">
+                            <div class="container-fluid px-1 px-md-2 px-lg-2">
+                                <form method="GET" action="https://www.google.com/search" class="d-flex d-md-block  align-items-center" target="_blank">
+                                    <span><img loading="lazy" src="https://www.online-notepad.net/assets/icons/google.png" alt="Búsqueda de Google" width="15px" height="15px">
+                                    </span>
+                                    <input class="nav-search-bar me-2" type="search" name="q" placeholder="Búsqueda de Google" aria-label="Search" id="googleSearch">
+                                </form>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="nav list-unstyled ms-auto">
+                                        <li>
+                                                                                            <a class="navbar-brand inner-item me-2 me-lg-4" href="" id="newNote">
+                                                                                            <img src="https://www.online-notepad.net/assets/icons/new-note.svg" alt="New note" width="16px" height="20px">
+                                                <span>Nueva nota</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="navbar-brand inner-item me-0 me-lg-4" id="lockNote" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">
+                                                <img src="https://www.online-notepad.net/assets/icons/lock-file.svg" alt="Lock Your File" width="15px" height="19px">
+                                                <span>Cerrar</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- pill #1 -->
+                        <div class="tab-pane fade" id="plaintextnote" role="tabpanel" aria-labelledby="plaintextnote-tab">
+                            <div class="paper">
+                                <div class="">
+                                    <textarea class="paper-content plaintextnote note_editors" id="input" oninput="calculate(); savedata()" onkeyup="count_it()" autofocus="" cols="117" rows="15"></textarea>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="mt-2 mb-2 mb-md-0 mb-lg-0">
+                                    <span><strong>Línea</strong><span type="text" class="line-counter-input ms-1 me-3" name="lineCount" size="2" value="0" id="linecounter" disabled="">0</span></span>
+                                    <span class=""><strong>Caracteres</strong><span class="ms-1 me-3" id="counter">0</span> </span> <span><strong>Palabras</strong><span id="words" class="ms-1">0</span></span>
+                                </div>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <button class="btn save-file-btn saveNotesBtn plaintextnoteBtn" data-url="/note/save" data-updateid="">
+                                        <span span="" class="spinner-border spinner text-dark" role="status">
+                                            <span class="sr-only visually-hidden">Loading...</span>
+                                        </span>
+                                        Ahorrar
+                                    </button>
+                                    <input type="hidden" value="">
+                                    <div class="dropdown">
+                                        <button class="btn  text-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span> <img src="https://www.online-notepad.net/assets/imgs/Icons/Icon awesome-download.svg" alt="Download your file" width="15px" height="15px"></span> <span class="selectedTextdropdown">Guardar descarga</span>
+                                            <span span="" class="spinner-border spinner text-dark" role="status">
+                                                <span class="sr-only visually-hidden">Loading...</span>
+                                            </span>
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item downloadBtn" data-filetype=".pdf" href="">PDF File</a></li>
+                                            <li><a class="dropdown-item downloadBtn" data-filetype=".doc" href="">Word Doc</a></li>
+                                            <li><a class="dropdown-item downloadBtn" data-filetype=".docx" href="">Word Docx</a></li>
+                                            <li><a class="dropdown-item downloadBtn" data-filetype=".txt" href="">.Txt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="d-flex justify-content-center mx-auto">
+                                    <!-- <ins class="adsbygoogle reponsiveAds" style="display:block;" data-ad-client="ca-pub-6081967606533178" data-ad-slot="2679903269" data-size="auto"></ins> -->
+                                    <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-6081967606533178" data-ad-slot="5484573386" data-adsbygoogle-status="done"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- pill #2 -->
+                        <div class="tab-pane fade active show" id="richtextnote" role="tabpanel" aria-labelledby="richtextnote-tab">
+
+                            <main>
+                                <div class="centered">
+                                    <div class="document-editor">
+                                        <div class="toolbar-container"></div>
+                                        <div class="content-container">
+                                            <div id="editor" name="richNote" oninput="richcalCulate()" autofocus="" cols="100" rows="10">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                            <!-- counter end -->
+                            <div class="d-flex justify-content-end flex-wrap align-items-center">
+                                <button class="btn save-file-btn saveNotesBtn richtextnoteBtn" data-url="/note/save" data-updateid="">
+                                    <span span="" class="spinner-border spinner text-dark" role="status">
+                                        <span class="sr-only visually-hidden">Loading...</span>
+                                    </span>
+                                    Ahorrar
+                                </button>
+                                <input type="hidden" value="">
+                                <div class="dropdown">
+                                    <a class="btn  text-dark dropdown-toggle" href="" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span> <img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/Icon awesome-download.svg" alt="download your file"></span> <span class="selectedTextdropdown">
+                                            Guardar descarga</span>
+                                        <span span="" class="spinner-border spinner text-dark" role="status">
+                                            <span class="sr-only visually-hidden">Loading...</span>
+                                        </span>
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                        <li><a class="dropdown-item downloadBtn" data-filetype=".pdf" href="">PDF File</a></li>
+                                        <li><a class="dropdown-item downloadBtn" data-filetype=".doc" href="">Word Doc</a></li>
+                                        <li><a class="dropdown-item downloadBtn" data-filetype=".docx" href="">Word Docx</a></li>
+                                        <li><a class="dropdown-item downloadBtn" data-filetype=".txt" href="">.Txt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pill #3 -->
+                        <div class="tab-pane fade" id="tasklist" role="tabpanel" aria-labelledby="tasklist-tab">
+                            <div class="your-list" style="min-height:320px;">
+                                <ul class="list-unstyled" id="sortable">
+                                    
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <input class="add-list-input form-control" id="my-list" type="text" name="" placeholder="Add New Task Here" onkeypress="if(window.event.keyCode==13)addNewList()">
+                                    <button class="btn add-list-btn" id="addnewlist">
+                                        <img loading="lazy" src="https://www.online-notepad.net/assets/icons/tick.svg" alt="tick icon">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end flex-wrap align-items-center">
+                                <button class="btn save-file-btn saveNotesBtn tasklistBtn" data-url="/note/save" data-updateid="">
+                                    <span span="" class="spinner-border spinner text-dark" role="status">
+                                        <span class="sr-only visually-hidden">Loading...</span>
+                                    </span>
+                                    Ahorrar
+                                </button>
+                                <input type="hidden" value="">
+                                <div class="dropdown">
+                                    <a class="btn  text-dark dropdown-toggle" href="" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span> <img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/Icon awesome-download.svg" alt="download icon"></span> <span class="selectedTextdropdown">
+                                            Guardar descarga</span>
+                                        <span span="" class="spinner-border spinner text-dark" role="status">
+                                            <span class="sr-only visually-hidden">Loading...</span>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                        <li><a class="dropdown-item downloadBtn" data-filetype=".pdf" href="">PDF File</a></li>
+                                        <li><a class="dropdown-item downloadBtn" data-filetype=".doc" href="">Word Doc</a></li>
+                                        <li><a class="dropdown-item downloadBtn" data-filetype=".docx" href="">Word Docx</a></li>
+                                        <li><a class="dropdown-item downloadBtn" data-filetype=".txt" href="">.Txt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                    <div class="col-lg-3">
+                        <div class="border-0 text-center w-100 mt-3">
+                            <ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-6081967606533178" data-ad-slot="4195002517" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><div id="aswift_3_host" style="border: none; height: 250px; width: 306px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        <div class="form search-form mt-3">
+                            <img loading="lazy" class="fa fa-search" src="https://www.online-notepad.net/assets/imgs/icons8-search.svg" alt="Búsqueda">
+                            <input type="text" class="form-control form-input" id="noteSearch" placeholder="Búsqueda">
+                        </div>
+                        <div class="side-bar">
+                            
+                                                    </div>
+                        <div class="noteItem mt-4" id="notFoundMsg" style="display: none">
+                            <div class="w-100 text-center">
+                                <h5>
+                                    Notes Not Found
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+
+        
+        
+    </section>
+    <!-- What does online notepad do -->
+    <section class="purpose py-40">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h3 class="service-card-heading">Lo que puede hacer con este bloc de notas en línea gratuito</h3>
+                                            <ul>
+	<li>Use este bloc de notas en línea gratuito para tomar notas rápidas</li>
+	<li>Uso del modo de editor de texto enriquecido para formato avanzado.</li>
+	<li>Por crear una lista de tareas sencilla y editable con este WordPad en línea.</li>
+	<li>Para anotar texto en línea e instantáneamente para conservar nuevas ideas.</li>
+	<li>Nuestro bloc de notas en línea viene con función de protección de contraseña.</li>
+	<li>Te ayuda a escribir publicaciones en redes sociales con recuento de palabras/caracteres en vivo.</li>
+	<li>Este cuaderno en línea gratuito le permite escribir blogs y artículos en línea.</li>
+</ul>
+                                    </div>
+                <div class="col-lg-5 text-end d-lg-block d-none">
+                    <img class="img-fluid" src="https://www.online-notepad.net/assets/imgs/featuresbanner.svg" alt="featuresbanner" width="365" height="365">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- how it works new section -->
+    <section class="howit-works py-40">
+        <div class="container">
+            <h3 class="service-card-heading text-center">¿Como funciona?</h3>
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-md-0 mb-lg-0">
+                    <div class="how-card">
+                        <img src="https://www.online-notepad.net/assets/imgs/Import.svg" alt="Import">
+                        <h4>Escriba o importe su archivo</h4>
+                                                    <p>Simplemente visite nuestro block de notas online a través de cualquier navegador de su elección o el que ya está disponible. No importa qué máquina o sistema operativo esté usando, simplemente vaya a online-notepad.net y comience a usar nuestro bloc de notas online para escribir una nota.</p>
+                                            </div>
+                </div>
+                <div class="col-lg-4 mb-4 mt-5 mb-md-0 mb-lg-0 mt-md-0 mt-lg-0">
+                    <div class="how-card">
+                        <img src="https://www.online-notepad.net/assets/imgs/Edit.svg" alt="Import">
+                        <h4>Edite su archivo aquí</h4>
+                                                    <p>Ahora comience a escribir directamente en la página que aparece en nuestro bloc notas online o importe un archivo ya existente desde su computadora para continuar o editar. Seleccione su opción preferida de "texto sin formato" o "texto enriquecido", lo que se adapte a su propósito.</p>
+                                            </div>
+                </div>
+                <div class="col-lg-4 mt-5 mt-md-0 mt-lg-0">
+                    <div class="how-card">
+                        <img src="https://www.online-notepad.net/assets/imgs/Download.svg" alt="Download">
+                        <h4>Descargar archivo</h4>
+                                                    <p>Una vez que haya terminado de escribir, haga lo que quiera con su nota, edítela para mayor claridad o mejor formato, compártala con otras personas, obtenga una vista previa, guárdela, cifre con la opción de bloqueo o simplemente descárguela de nuestro editor de texto en línea.</p>
+
+<p>&nbsp;</p>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="purpose py-40 whoCanUse">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h3 class="service-card-heading">¿Quién puede usar este bloc notas online?</h3>
+                                            <ul>
+	<li>Los estudiantes pueden usar este editor de notas en línea para escribir ensayos, tareas y tareas diarias.</li>
+	<li>Los escritores pueden usar este bloc de notas en línea para escribir blogs y artículos.</li>
+	<li>Los empresarios pueden guardar ideas, enlaces, puntos breves en este editor de texto en línea.</li>
+	<li>Los administradores de contenido pueden usar el bloc de notas gratuito para formatear el texto.</li>
+	<li>Los investigadores pueden mantener el registro de varios trabajos de investigación.</li>
+	<li>Los usuarios comunes pueden escribir un diario en el bloc de notas en línea y bloquearlo con cifrado.</li>
+</ul>
+                                    </div>
+                <div class="col-lg-5 text-end d-lg-block d-none">
+                    <img class="img-fluid" src="https://www.online-notepad.net/assets/imgs/whocanuseBanner.png" alt="whocanuseBanner">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- best section here -->
+    <section class="pt-5 pb-2 pb-md-5">
+        <div class="container">
+            <div class="row position-relative">
+                <h3 class="service-card-heading text-center mb-5">Best bloc de notas online y Editor de texto</h3>
+                <div class="col-lg-6 d-lg-block pe-lg-0 d-none text-center">
+                    <img loading="lazy" class="img-fluid mt-5 pt-5" src="https://www.online-notepad.net/assets/imgs/Icons/content-img.svg" height="500" width="400" alt="img">
+                </div>
+                <div class="col-lg-6 ps-lg-0">
+                    <div class="single-step">
+                        <div class="list-head">
+                            <div class="why-best-icon">
+                                <img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/list1.svg" alt="easy note pad" width="38px" height="38px">
+                            </div>
+                            <div>
+                                <h4 class="step-hd">Toma de notas fácil</h4>
+                                                                    <p>Ya sea personal u oficial, escribe lo que quieras desde cualquier lugar y en cualquier momento en nuestro bloc de notas en linea con la máxima facilidad de acceso y uso. Vaya a online-notepad.net, escriba, guarde y listo. Tan simple como eso.</p>
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="single-step">
+                        <div class="list-head">
+                            <div class="why-best-icon">
+                                <img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/list2.svg" alt="file protection" width="38px" height="38px">
+                            </div>
+                            <div>
+                                <h4 class="step-hd">Protección de archivos</h4>
+                                                                    <p>No importa qué tipo de texto conserve con nosotros, nunca nos infiltramos en sus archivos ya que nunca almacenamos ni retenemos datos en nuestros servidores personales directamente. Además, el usuario puede cifrar cada archivo protegido con una contraseña para restringir el acceso.</p>
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="single-step">
+                        <div class="list-head">
+                            <div class="why-best-icon">
+                                <img loading="lazy" src="https://www.online-notepad.net/assets/imgs/Icons/list3.svg" alt="advanced Editing" width="38px" height="38px">
+                            </div>
+                            <div>
+                                <h4 class="step-hd">Edición avanzada</h4>
+                                                                    <p>Junto con un útil block de notas online, este también es un buen editor de texto online que le permite manejar el texto como lo desee. Con su función de edición de texto enriquecido, puede editar longitudes y anchuras de texto, fuente, tamaño, estilo, forma y demás.</p>
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="single-step">
+                        <div class="list-head">
+                            <div class="why-best-icon">
+                                <img src="https://www.online-notepad.net/assets/imgs/Icons/list4.svg" alt="Full Options" width="37px" height="37px">
+                            </div>
+                            <div>
+                                <h4 class="step-hd">Opciones completas</h4>
+                                                                    <p>Teniendo en cuenta la gama de opciones que ofrece nuestro bloc de notas digital, esta es sin duda la mejor opción disponible para escribir notas online y edición de texto. Es un bloc de notas online gratis más un smart notas en linea, con opciones de encriptación, uso compartido y descarga de archivos.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-conetnt" class="py-2">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-8 mx-auto">
+                    <h4 class="question">Verdadera manifestación de simplicidad, productividad, privacidad y velocidad.</h4>
+                                            <p>Todas estas son características distintivas de nuestro bloc notes online y editor de texto gratuito. Los usuarios obtienen una gran experiencia escribiendo y editando notas con un diseño fácil de usar, pueden administrar varios archivos a la vez y realizar varias acciones en todos, pueden mantener los archivos protegidos con cifrado y contraseña personalizada, y todo esto se puede hacer en un ritmo vertiginoso.</p>
+
+<p>&nbsp;</p>
+                                    </div>
+                <div class="col-lg-4 text-end d-lg-block d-none">
+                    <img loading="lazy" class="img-fluid" src="https://www.online-notepad.net/assets/imgs/content-illusta.svg" alt="content illusta" width="245px" height="189px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section ends here -->
+    <section id="faq" class="py-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-lg-block d-none text-center">
+                    <img loading="lazy" src="https://www.online-notepad.net/assets/imgs/faq-banner.svg" alt="faqs banner" width="340px" height="303px">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="service-card-heading mt-3 text-center">FAQs</h3>
+                    <div class="accordion accordion-flush" id="faqlist">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1" aria-expanded="false">
+                                    ¿Necesito crear una cuenta primero para usar bloc de nota online?
+                                </button>
+                            </h2>
+                            <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body" style="text-align: justify">
+                                                                            <p>¡NO! No es necesario que se registre o inicie sesión con ningún dato personal antes de utilizar nuestro bloc de notas virtual. Todo lo que necesita es visitar nuestro bloc de notas gratis y comenzar a escribir o editar lo que desee al instante.</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">¿Todas las funciones mencionadas anteriormente son gratuitas?</button>
+                            </h2>
+                            <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body" style="text-align: justify">
+                                                                            <p>¡Sí! Desde escribir hasta editar texto en línea, compartir, encriptar, descargar, todas las características de este bloc de nota online son absolutamente gratis. No restringimos su número de usos.</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                                    ¿Mis notas están seguras aquí?
+                                </button>
+                            </h2>
+                            <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body" style="text-align: justify">
+                                                                            <p>Bueno, dado que es un bloc notas online donde todas las operaciones se realizan en la nube, no tenemos acceso directo a sus archivos ni almacenamos ni retenemos ninguno de sus datos con nosotros, así que sí, sus archivos están absolutamente seguros. .</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">¿Puedo administrar varias notas a la vez en este bloc de notas en línea?
+                                </button>
+                            </h2>
+                            <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div class="accordion-body" style="text-align: justify">
+                                                                            <p>¡Sí! Puede escribir, editar y administrar varios archivos a la vez con nuestro bloc de notas on line mientras tiene una vista completa de todos los demás archivos simultáneamente.</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- preview text model -->
+    <div class="modal">
+        <div class="modal-content">
+            <span id="close">×</span>
+            <h3>Preview Your Message:
+            </h3>
+            Name:
+            <div id="modalname"></div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="#exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"> Show a second modal and hide this one with the button below.
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered m-4 m-md-auto m-lg-auto">
+            <div class="modal-content py-2">
+                <div class="modal-header border-0 text-center">
+                    <h4 class="modal-title w-100">Enter Password</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-6">
+                            <input class="form-control" placeholder="Password" type="password" name="" id="note_password">
+                            <p class="invalid-feedback">Password can't be empty!</p>
+                        </div>
+                        <div class="col-3">
+                            <a type="button" class="btn save-btn " id="passwordSUBtn" data-url="/note/save" data-updateid="">
+                                Ahorrar
+                            </a>
+                            <input type="hidden" id="updateOnlyPassword">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="givePassword" tabindex="-1" aria-labelledby="givePasswordLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-2">
+                <div class="modal-header border-0 text-center">
+                    <h4 class="modal-title w-100">Password is required</h4>
+                </div>
+                <div class="modal-body text-center pt-0">
+                    <form class="row g-3 align-items-center justify-content-center">
+                        <div class="col-6  has-validation">
+                            <input class="form-control" placeholder="Password" type="password" name="" id="protected_note" autofocus="">
+                        </div>
+                        <div class="col-3">
+                            <a href="" class="btn btn-dark" style="color: #fff!important" data-protected="" data-url="" data-secretid="" data-method="" id="notePasswordBtn">
+                                Submit
+                            </a>
+                        </div>
+                    </form>
+                    <p id="wrongPassEror" class="text-center mt-3 text-danger" style="display: none">Password does not match our records</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="getEmail" tabindex="-1" aria-labelledby="getEmailLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-2">
+                <div class="modal-header border-0 text-center">
+                    <h4 class="modal-title w-100">Enter Receiver's Email   </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0">
+                    <form class="row g-3 align-items-center justify-content-center" action="" method="POST">
+                        <input type="hidden" name="_token" value="4CKl2BdaJOrlqMxv0Xfdwh1Zd7sPggyFP9xRAhND">                        <input type="hidden" id="viamailLink" name="shared_link">
+                        <div class="col-6  has-validation">
+                            <input class="form-control " placeholder="Email" type="email" name="receiver_email" id="receiver_email">
+                        </div>
+                        <div class="col-3">
+                            <a href="" id="shareNoteViaMail" data-url="note/shareviemail" data-method="POST" class="btn btn-dark" style="color: #fff!important">
+                                Send
+                                <span span="" class="spinner-border spinner text-white" role="status">
+                                    <span class="sr-only visually-hidden">Loading...</span>
+                                </span>
+                            </a>
+                        </div>
+                    </form>
+                    <p id="emailRequired" class="text-center mt-3 text-danger" style="display: none">
+                        Please enter Receiver's Email
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="notFound" tabindex="-1" aria-labelledby="notFoundLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-2">
+                <div class="modal-header border-0 text-center">
+                    <h4 class="modal-title w-100">Not Found!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0">
+                    <h3>Sorry the Link is invalid or Expired</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+    
+    <div class="w-100 bg-white border text-dark text-center my-sticky-div example_responsive_1">
+        <button class="p-4 btn toggleButton shadow-none">
+            X
+        </button>
+        <div align="center" class="ad-zone ad-space ad-unit textads banner-ads banner_ads" style="padding:0;position: relative;">
+            <!-- horizontal ads unit -->
+            <ins class="adsbygoogle reponsiveAds" style="display: block; width: 728px; height: 90px;" data-ad-client="ca-pub-6081967606533178" data-ad-slot="8523649781" data-size="auto" data-adsbygoogle-status="done"><div id="aswift_4_host" style="border: none; height: 90px; width: 728px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <footer id="footern" class=" border-top border-1 ">
+    <div class="container py-40">
+        <div class="row  ">
+            <div class="col-lg-4 text-start   ">
+                <a href="https://www.online-notepad.net/es/bloc-de-notas-online">
+                    <img class="logo" src="https://www.online-notepad.net/assets/imgs/note-logo.svg" alt="My Logo" width="182.31" height="60">
+                </a>
+                <p class="text-start footer-text mb-0 mb-md-2 mb-lg-2">La toma y edición de notas en línea no podría ser mejor, más segura y más inteligente.</p>
+            </div>
+            <div class="col-lg-4  text-start">
+                <div class="d-flex justify-content-start justify-content-lg-center mt-0 mt-md-3 mt-lg-3">
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="https://www.online-notepad.net">Hogar</a></li>
+                        <li><a href="https://www.online-notepad.net/blog">Blog</a></li>
+                        <li><a href="https://www.online-notepad.net/policies">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 text-start  ">
+                <div class="d-flex justify-content-lg-end justify-content-start justify-content-lg-center mt-0 mt-md-3 mt-lg-3">
+                    <ul class="list-unstyled ">
+                        <li><a href="https://www.online-notepad.net/contact-us">Contacta con nosotras</a></li>
+                        <li><a href="https://www.online-notepad.net/terms-and-conditions">Términos y condiciones</a></li>
+                        <li>
+                            <a class="me-3" href="https://www.facebook.com/OnlineNotepad.net/"><img src="https://www.online-notepad.net/assets/icons/facebook.svg" alt="facebook icon" width="24px" height="24px"></a>
+                            <a class="me-3" href="https://www.pinterest.com/onlinenotepad1/"> <img src="https://www.online-notepad.net/assets/imgs/Icons/pintrest.svg" alt="pinterest icon" width="24px" height="24px"></a>
+                            <a href="https://twitter.com/OnlineNotepad1"> <img src="https://www.online-notepad.net/assets/icons/twitter.svg" alt="twitter icon" width="24px" height="24px"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-dark border-top pt-2 pb-5 mb-5">© 2022 - Todos los derechos reservados.</p>
+</footer>
+<button class="p-4" onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;"></button>
+    <script src="https://www.online-notepad.net/assets/js/jquery-3.6.0.js"></script>
+<script src="https://www.online-notepad.net/assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {
+        scrollFunction()
+    };
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    $('.toggleButton').click(function() {
+        $('.my-sticky-div').toggleClass('bottom');
+    });
+</script>
+
+<script data-ad-client="ca-pub-6081967606533178" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-type="lazy" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
+<script id="flying-scripts" type="text/javascript">
+    const userInteractionEvents = ["mouseover", "keydown", "touchstart", "touchmove", "wheel"];
+    userInteractionEvents.forEach(function(event) {
+        window.addEventListener(event, triggerScriptLoader, {
+            passive: !0
+        })
+    });
+
+    function triggerScriptLoader() {
+        loadScripts();
+        userInteractionEvents.forEach(function(event) {
+            window.removeEventListener(event, triggerScriptLoader, {
+                passive: !0
+            })
+        })
+    }
+
+    function loadScripts() {
+        document.querySelectorAll("script[data-type='lazy']").forEach(function(elem) {
+            elem.setAttribute("src", elem.getAttribute("data-src"))
+        })
+    }
+</script>
+    <script>
+        $('#protected_note, #note_password').keypress(function(event){
+            if (event.which == '13') {
+                event.preventDefault();
+            }
+        });
+    </script>
+            <script src="https://www.online-notepad.net/assets/js/jquery.ui.touch-punch.min.js"></script>
+        <script>
+            initiateCodes();
+            appendExtraFiles();
+            // append extra JS files
+            function appendExtraFiles() {
+                var jsFiles = [
+                    "https://www.online-notepad.net/assets/js/jquery-ui.min.js",
+                    "https://www.online-notepad.net/assets/ck-edit/sample/ckeditor.js?v=1.0.2",
+                    "https://www.online-notepad.net/assets/js/notes.js?v=1.0.8"
+                ];
+
+                setTimeout(function() {
+                    var bodyID = document.getElementsByTagName("body")[0];
+                    for (let index = 0; index < jsFiles.length; index++) {
+                        var newScript = document.createElement('script');
+                        newScript.type = 'text/javascript';
+                        newScript.src = jsFiles[index];
+                        bodyID.appendChild(newScript);
+                    }
+                }, 2000);
+            }
+
+            function initiateCodes(){
+
+                setTimeout(function(){
+                    // initial rich editor
+                    DecoupledDocumentEditor
+                    .create(document.querySelector('#editor'), {
+                        extraPlugins: [SimpleUploadAdapter],
+                        removePlugins: ['MediaEmbed']
+                    })
+                    .then(editor => {
+                        const toolbarContainer = document.querySelector('main .toolbar-container');
+
+                        toolbarContainer.prepend(editor.ui.view.toolbar.element);
+
+                        window.editor = editor;
+                    })
+                    .catch(err => {
+                        console.error(err.stack);
+                    });
+
+                    // initiate sortable
+                    $(function() {
+                        $("#sortable").sortable();
+                    });
+                },2500)
+            }
+            $(".choosedLang").on('click',function(){
+                const selectedURL = $(this).data('href');
+            })
+        </script>
+    
+
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230705/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>
